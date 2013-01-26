@@ -1,20 +1,8 @@
-<h1>ログイン画面</h1>
+<h1>New address</h1>
 
-<%= form_tag sessions_path do %>
-<table id="login_form">
-    <tr>
-    <td><%= label_tag :account, 'アカウント名' %></td>
-    <td><%= text_field_tag :account, params[:account] %></td>
-</tr>
+<%= render 'form' %>
 
-<tr>
-    <td><%= label_tag :pass, 'パスワード' %></td>
-    <td><%= password_field_tag :pass, params[:pass] %></td>
-</tr>
+<%= link_to 'Back', sessions_path %>
 
-<tr>
-    <td><%= submit_tag "ログイン" %></td>
-</tr>
-</table>
 
-<% end %>
+
